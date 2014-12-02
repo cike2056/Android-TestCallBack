@@ -17,7 +17,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		MyCallBack mCallBack = new MyCallBack();
-		mCallBack.getURLJSONContent("http://news-at.zhihu.com/api/3/theme/11 ", new ICallBack() {
+		mCallBack.getURLJSONContent("http://news-at.zhihu.com/api/3/stories/latest ", new ICallBack() {
 			public void execute(JSONObject response) {
 				Log.i("MainActivity", response.toString());
 			}
